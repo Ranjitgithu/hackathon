@@ -7,5 +7,6 @@ public static void main(String [] args)
       int a,b;
       int sum=a*b;
       sop("enter a and b");
+      System.out.println("hi ra hooka");
 }
 }
