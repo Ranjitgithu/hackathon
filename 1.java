@@ -4,6 +4,8 @@ class a
 {
 public static void main(String [] args)
 {
-System.out.println("hello world");
+      int a,b;
+      int sum=a+b;
+      sop("enter a and b");
 }
 }
