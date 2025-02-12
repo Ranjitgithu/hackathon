@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insight Matcher</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Insight Matcher</h2>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="student_id">Student ID:</label>
+                <input type="text" class="form-control" id="student_id" name="student_id" required>
+            </div>
+            <div class="form-group">
+                <label for="user_id">User ID:</label>
+                <input type="text" class="form-control" id="user_id" name="user_id" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" class="form-control" id="password" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="passkey">Passkey:</label>
+                <input type="password" class="form-control" id="passkey" name="passkey" required>
+            </div>
+            <div class="form-group">
+                <label for="question_pdf">Question PDF:</label>
+                <input type="file" class="form-control-file" id="question_pdf" name="question_pdf">
+            </div>
+            <div class="form-group">
+                <label for="question_image">Question Image:</label>
+                <input type="file" class="form-control-file" id="question_image" name="question_image">
+            </div>
+            <div class="form-group">
+                <label for="question_html">Question HTML:</label>
+                <input type="file" class="form-control-file" id="question_html" name="question_html">
+            </div>
+            <div class="form-group">
+                <label for="key_sheet_pdf">Key Sheet PDF:</label>
+                <input type="file" class="form-control-file" id="key_sheet_pdf" name="key_sheet_pdf">
+            </div>
+            <div class="form-group">
+                <label for="key_sheet_image">Key Sheet Image:</label>
+                <input type="file" class="form-control-file" id="key_sheet_image" name="key_sheet_image">
+            </div>
+            <div class="form-group">
+                <label for="answer_sheet_pdf">Answer Sheet PDF:</label>
+                <input type="file" class="form-control-file" id="answer_sheet_pdf" name="answer_sheet_pdf">
+            </div>
+            <div class="form-group">
+                <label for="answer_sheet_image">Answer Sheet Image:</label>
+                <input type="file" class="form-control-file" id="answer_sheet_image" name="answer_sheet_image">
+            </div>
+            <div class="form-group">
+                <label for="weightage">Weightage for Each Question (Comma-separated):</label>
+                <input type="text" class="form-control" id="weightage" name="weightage" required>
+            </div>
+            <button type="button" class="btn btn-primary" onclick="uploadFiles()">Upload</button>
+        </form>
+        <div id="responseMessage" class="mt-3"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="/static/js/upload.js"></script>
+</body>
+</html>

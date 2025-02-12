@@ -1,0 +1,105 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(74, 73, 65);
+    color: #FFD700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    margin-top: 350px;
+}
+
+.container {
+    text-align: center;
+    padding: 30px;
+    background-color: #1E2022;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    font-size: 2rem;
+    color: #FFD700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+h2:hover {
+    color: rgba(102, 169, 31, 0.505);
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #FFD700;
+}
+
+input[type="text"], input[type="password"], input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    border: 1px solid #FFD700;
+    box-sizing: border-box;
+    background-color: #51524b;
+    color: #FFD700;
+    transition: background-color 0.4s ease, box-shadow 0.2s ease;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="file"]:focus {
+    background-color: #60615a;
+    box-shadow: 0 0 30px #FFD700;
+}
+
+button {
+    background-color: #dd1919;
+    color: #FFD700;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 12px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeIn 1s ease-in-out;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: #800020;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+#responseMessage {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #FFD700;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .container {
+        padding: 20px;
+    }
+}
